@@ -42,7 +42,10 @@ const engine = new Engine({
 });
 
 let fpsMeter: FpsMeter;
-const sprite = PIXI.Sprite.from('images/logo.png');
+const spriteUrl = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/106114/bee.svg";
+const texture = PIXI.Texture.from(spriteUrl);
+const sprite = new PIXI.Sprite(texture);
+// const sprite = PIXI.Sprite.from();
 
 // ==============
 // === STATES ===
